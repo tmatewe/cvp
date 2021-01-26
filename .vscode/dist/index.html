@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fin.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>CVP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>CVP</h2>
+          <!-- unit produced -->
+          <input type="text" value="units" /><input
+            type="text"
+            id="units"
+          /><br /><br />
+          <!-- text column -->
+          <input type="text" class="hide" value="" />
+          <input type="text" value="Total" />
+          <input type="text" value="Per Unit" />
+          <input type="text" value="%" /><br />
+          <!-- sales column -->
+          <input type="text" value="Sales" />
+          <input type="text" id="totalSales" />
+          <input type="text" id="sellingPrice" />
+          <input type="text" id="salesPercentage" /><br />
+          <!-- variable costs -->
+          <input type="text" value="VC" />
+          <input type="text" id="variableCosts" />
+          <input type="text" id="variableCostsPerUnit" />
+          <input type="text" id="variableCostsPercentage" /><br />
+          <!-- contribution column -->
+          <input type="text" value="cont" />
+          <input type="text" id="contribution" />
+          <input type="text" id="contributionPerUnit" />
+          <input type="text" id="contributionPercentage" /><br />
+          <!-- fixed costs -->
+          <input type="text" value="FC" />
+          <input type="text" id="fixedCosts" /><br />
+          <!-- profit -->
+          <input type="text" value="profit" />
+          <input type="text" id="profit" /><br /><br />
+          <button class="btn btn-outline-dark btn-sm" id="btn">Calculate</button
+          ><br /><br />
+          <div id="results"></div>
+          <h6>Break even in units</h6>
+          <input type="text" id="breakEvenInUnits" /><br />
+          <h6>Break even in rands</h6>
+          <input type="text" id="breakEvenInRands" /><br />
+          <h6>Margin of safety in units</h6>
+          <input type="text" id="marginOfSafetyInUnits" /><br />
+          <h6>Margin of safety in rands</h6>
+          <input type="text" id="marginOfSafetyInRands" /><br />
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="fin.js"></script>
+  </body>
+</html>
